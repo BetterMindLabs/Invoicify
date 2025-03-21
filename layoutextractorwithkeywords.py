@@ -44,7 +44,7 @@ if uploaded_file is not None:
     # Open the image using PIL
     image = Image.open(uploaded_file)
     with col1:  # Image on the left
-        st.image(image, caption="Uploaded Image", use_column_width=True)
+        st.image(image, caption="Uploaded Image", use_container_width=True)
 
 submit = st.button("Process")
 
